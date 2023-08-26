@@ -3,10 +3,41 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Outlet,
+} from "react-router-dom";
+import Home from './pages/Home/components/Home';
+import BlockDetails from './pages/BlockDetails/BlockDetails';
+import AddressDetails from './pages/AddressDetails/components/AddressDetails';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!
+      <Outlet/>
+    </div>,
+    children: [
+      {
+        index: true,
+        element: <Home/>
+      },
+      {
+        path: "block",
+        element: <BlockDetails/>
+      },
+      {
+        path: "address",
+        element: <AddressDetails/>
+      },
+    ]
+  },
+]);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
   document.getElementById('root')
 );
