@@ -11,13 +11,13 @@ import {
 import Home from './pages/Home/components/Home';
 import BlockDetails from './pages/BlockDetails/BlockDetails';
 import AddressDetails from './pages/AddressDetails/components/AddressDetails';
+import Root from './pages/Root/Root';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!
-      <Outlet />
-    </div>,
+    element: <Root/>,
+
     children: [
       {
         index: true,
