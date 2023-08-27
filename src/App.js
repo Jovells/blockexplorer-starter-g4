@@ -8,7 +8,7 @@ import './App.css';
 // level code.
 const settings = {
   apiKey: process.env.REACT_APP_ALCHEMY_API_KEY,
-  network: Network.ETH_MAINNET,
+  network: Network.MATIC_MUMBAI,
 };
 
 
@@ -21,7 +21,7 @@ const alchemy = new Alchemy(settings);
 
 function App() {
   const [blockNumber, setBlockNumber] = useState();
-  
+
 
   useEffect(() => {
     async function getBlockNumber() {
