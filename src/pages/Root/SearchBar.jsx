@@ -1,18 +1,22 @@
 
 import React, { useState } from "react";
-import { TextField, IconButton, InputAdornment, FormControl } from "@mui/material";
+import { TextField, IconButton, InputAdornment, FormControl, Box } from "@mui/material";
 import SearchIcon from '@mui/icons-material/Search';
+import { Form, useNavigate } from "react-router-dom";
 
 export default function SearchBar({}) {
+
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     const searchTerm = event.target.elements.search.value;
     event.preventDefault();
+    navigate(`/address/${searchTerm}`);
     console.log("Search term:", searchTerm);
   };
 
   return (
-    <FormControl sx={{minWidth: 0.6}} onSubmit={handleSubmit}>
+    <Box component = 'form' sx={{minWidth: 0.6}} onSubmit={handleSubmit}>
       <TextField
       fullWidth
         id="search"
@@ -29,6 +33,6 @@ export default function SearchBar({}) {
       >
 
       </TextField>
-    </FormControl>
+    </Box>
   );
 };
