@@ -46,40 +46,7 @@ export const blks =[
           v: 160038,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x917f5a0acd4b8d55136ee9559131c4c29113fdcb8023707c679bf51a688ce4c3",
@@ -119,40 +86,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x02b9096fc139b9fe2e236f90e1b85a998f6449c272f1a3ba763b310f2ec64ac2",
@@ -192,40 +126,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5da6fd5755d75358d0413e43f262438b2b71e6d905cdd6b6d308944ec9baeb6a",
@@ -265,40 +166,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xdbc7e66474c856ec4652352912bef91ff5c39ce2ab01f903650b3dfc207e7727",
@@ -338,40 +206,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x3940d8ef10b61697a0ce1b64fbe56d9bce2c20270a8e6249168555537a49b122",
@@ -411,40 +246,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb80fc8616ad65603732e312bc57259786ed4d72f31e8df38e1b6390d13239618",
@@ -484,40 +286,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x9a876d478a7e32624fb0985f62f5ec86463dd935b28a7d56a70e6e0f3d194a77",
@@ -557,40 +326,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x58ad3e2b3bb77e347a30d83796d8774be58b9691ea2aac547bab1a6f3e41f03b",
@@ -630,40 +366,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xebdde037c9b37a7aeada8a023bc12346679df65084ac1eac80ed543a29e1baf3",
@@ -703,40 +406,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x1436ab8ed62c658ecd0f91ee19b5b7ac2d4be99f2d5966e2e1f617f2d4b8f818",
@@ -776,40 +446,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x9956402c7f35592ecc7f7f1d0418a595fbc704b12ba9308bede07b0c8b156fde",
@@ -849,40 +486,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb6bcb74877d24899a58f8ecc10a0184d78890b961505f4d05f6e9d22e92b28ef",
@@ -922,40 +526,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x46f307277eb7fd7a56b7cad1c0ebccff0e3f08ae4d3323d02f33a13eaa6e492c",
@@ -986,40 +557,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x2398638421ae7123e274469a38ae1635b3c5ff36415f96d119b5d0f09c325187",
@@ -1059,40 +597,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb91e7bb6e896ab491cc7d7e67d06fdd8d55b6005c7a83108a456113dd5ecef9d",
@@ -1132,40 +637,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xa59ed7646d126c2db2878e20cfd7ea1457bc65dcfb4e39432c6be18d0121253b",
@@ -1205,40 +677,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6d2c4d3136071a6960f0aa90168b0ae4d52f289759d0950d3181854125ccc241",
@@ -1278,40 +717,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xe887680da84c54b690c33afc8a7a7a5696a47d95a7320e977194f4bfb02a901f",
@@ -1342,40 +748,7 @@ export const blks =[
           v: 160038,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcd934079ecf55b7f26c069143f98e032d2c7a1fa91a23784d9f53f20176e7db2",
@@ -1415,40 +788,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xd8829cc8f74f250baaf3f7873473a3034f2a08861c0b7da89f225fed259ba6af",
@@ -1488,40 +828,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6aee76afe2711cc0b671dcd8c3cf4d34e2b8cd87b1f6678fb7d016f2a7edac27",
@@ -1561,40 +868,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcbd0204c56853bb53be9292e032c3a28d5aac5c0e7d4f6b8398cf5aa6d6214e3",
@@ -1634,40 +908,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xbe587b1ca39c5157ddf814b72859373079bcf2c3186e0a3bc3edb2789e49ed2a",
@@ -1698,40 +939,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xed20b8afd0cac2c593aaa5da1332ce18319c17d3a3e09962babe0afcd616c02a",
@@ -1771,40 +979,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x01c46134f2fa54e874c3e1df7e865b131fcc62229fdc45dc4dc57284e8ab19ff",
@@ -1844,40 +1019,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5a0f1ef743841d529074980ee03e4e8e5b988bc83c607f86a512e51a8d4d9f75",
@@ -1917,40 +1059,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x0ed631403e1d88e761c6478e5e8c548165a84c4246c3992a96f2401f86951fd7",
@@ -1990,40 +1099,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7c708a1abb2112db843dd2c080c216cc48f438e157bdc85a4cfdbd10f5adecf5",
@@ -2063,40 +1139,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7beff700a1298b50ad326749fd3798e3d9302a4fb305a15c17e396913c51b16c",
@@ -2136,40 +1179,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xddc7faf9201993b10f03cfe1020d24e97acdaae5d4e55e106ba8d165afe1b6c3",
@@ -2209,40 +1219,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -2301,40 +1278,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5bca7645691059667c775046d94d3ca7799df6b6f8b5a995b421e1a917c43f7a",
@@ -2374,40 +1318,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xaaaa216c86b9e3affe4199727bbbcea263fec2b7715d93a034cd0251a919772c",
@@ -2447,40 +1358,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcf23300c5e3972f66166a64de33c21ec708ee5dc185fbac190dce7d304fad1a3",
@@ -2520,40 +1398,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x70f086e2cf3cc4d9aae751fb537c7c35355f0fb5378517891fe5eba3076a63bc",
@@ -2593,40 +1438,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x3c38597274d3f5c3bc1d8c0a716b112475994a2b92fcde9031b5a56facc5d93b",
@@ -2666,40 +1478,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5e14be9b4577abf4796c8da96eb8c018f5250cb35938cd599fbeae91bb883a5b",
@@ -2739,40 +1518,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x733ed16315fe5bb186169be6d4f7f97465bf0d3c41cda28ae1900a6532306ac0",
@@ -2812,40 +1558,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5fa0291b6e89f187046a10d5246ad2a2e03649c81efbd81df6bd2a71dac21292",
@@ -2885,40 +1598,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x48fb139fad5c5f82b461b660818686c0503608135eb0307a0c7547201b521fc3",
@@ -2958,40 +1638,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x122fd8cfcd56fc1148a138937b8c1abea947d3255e9f95b846d5fb96d19cc566",
@@ -3031,40 +1678,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb9af345878b2a980fb9aabe3ce8047771081e0e4ef5165518c128327d2f56281",
@@ -3104,40 +1718,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x1324950a613f1d9c88a71cc7672255c5e7c6142fed4436e76efe293fe64508ed",
@@ -3177,40 +1758,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x40308da2347a6c2c332b4e370a4cb4225a293df7605224019464ad4709163e4b",
@@ -3250,40 +1798,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x48ab7245152279315bb2773295eb07e31ea239e2577ae5be64d6fcfaff3dab15",
@@ -3323,40 +1838,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x815d8bd1588f0d3e4918c1300b950fea970d3786faf332f9c3a49f99127f761b",
@@ -3396,40 +1878,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x28e9323639b57270d3f52f33839a9b9241ebb47107e04bc18c6d183737a169ee",
@@ -3469,40 +1918,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x586c323a5c0fb40d1093d9b1d80740cf922a8ed99a65534b4760131448205d2b",
@@ -3542,40 +1958,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7c22f15cd9355b21ede94ef6f616a0f9ac7d1fe15af6e976b5fca199afe3eae9",
@@ -3606,40 +1989,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x30600bf281fe802541ab0f32d16d73c2b374f37be8fda82e0aef4b56e4be0166",
@@ -3679,40 +2029,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb7a8acb211ab75d3481c08310f8a1c5d9f18579f0b71cea2e856aa4fd24a0ac9",
@@ -3752,40 +2069,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x003e057942ffb006210aedd8757d2c707115bae6f45fea5647031a436a6a9135",
@@ -3825,40 +2109,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xf8d9072a074e8ed7f072c86cba0486fcf84f2fd926844afdf900ff3745b27423",
@@ -3898,40 +2149,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x024a6a1ff293aca9021abec917f863451580af0cd235bb1d5c107c4cf23fe2b9",
@@ -3971,40 +2189,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb2a46eb8b791d98be18c3e9688b1d48a0c4d07168cfd87a82ddae62fb6c9cb18",
@@ -4044,40 +2229,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x332b979e202ad9fb3acbd4aef026274db36904ae45f53228b046252a8700aa34",
@@ -4117,40 +2269,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5eb3e262ee948071e0cb25d54a1104905194207e0ac9c9c1f15f13b28ec0f804",
@@ -4190,40 +2309,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xd46774416c6cfd82109f80ccaf77e039718fb4ede6b81559270564db9ddbb574",
@@ -4263,40 +2349,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -4355,40 +2408,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xde5f1e7a0c1b757b02601c1566e61f20c6151e9481ffa9b62b41c6e88b9825a1",
@@ -4428,40 +2448,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7366e7031d29e48417eeecea64f17e2f141d5abdf4f749ea7a5c10b1caa4121d",
@@ -4501,40 +2488,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x3a3669d831d3fe125aad09b799eefcc65bea824a34125cc8564a4f95c8a2fd3f",
@@ -4574,40 +2528,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x875454719c13afec7e4d398eb19d076a97653601b106717150f28b2aaa6ae8d6",
@@ -4647,40 +2568,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xfccca143d22125e947d5eb594ed340ec8c8923f24a251a25d5c0cfe9f47359d4",
@@ -4720,40 +2608,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x3184bd2c106e86cc4413f3e4006f0a87456397078358d4a3777df6ca39871fbd",
@@ -4793,40 +2648,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xce511b867e0e6ce99e21781df8b98784efcf1a5aafd5f6a45af82d4d76470343",
@@ -4866,40 +2688,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xdcd4603e0ac00696675414280596ab949d1700d32669ee6947253ef4a58bc854",
@@ -4939,40 +2728,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xedfabeb37424b0cc802c46a7b9de12de911c53fb1a9a23cb9b8f706c03c845ee",
@@ -5012,40 +2768,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x8a81d65042790c6621e6fa83445787659344465961fbe09c7b32d2a40ed473b5",
@@ -5085,40 +2808,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xaa0cfbf48e48885051524d0e5f4e69b6f54cadad2ca2940ac59cfded844b43a3",
@@ -5158,40 +2848,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x589edc6b5cc22c2d88a847297591247c2be4242d4f43b980c1624204027f53b5",
@@ -5231,40 +2888,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xe0cb07d018c962d34565f85c33cae0b2f66292cd50102f5fd2e480fb86bdd1b8",
@@ -5304,40 +2928,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5439ff6876f3c6f73cd30e483ddf06fc98d43b28a8c6a2c5e32c0871abd26fdd",
@@ -5377,40 +2968,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5e60d2c5b4720dc0e8ea4c30f570807433ed2924927b15369c8a37120528d3d6",
@@ -5441,40 +2999,7 @@ export const blks =[
           v: 160038,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x4dabd2764e70d7fdd1586d2fac7b6f511ab76e77844ca5e250b68c5bedf7567c",
@@ -5514,40 +3039,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xf2d5d9d9b07cb54d9c682b28ba6f94894551c0b2e56b0925926013a073b4d84b",
@@ -5587,40 +3079,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xc8983a0947c8f6ff082cb0828574914f462608e143951d1f6f9a89571a2c91de",
@@ -5660,40 +3119,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xf527a7c0cbf7f432bcb69a6152240444e658339072d800d76a9dae04be728916",
@@ -5733,40 +3159,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xe1b602fe026f4e596a0da38cfbd64a54c73187cc133987fbbc92f115508aa4ab",
@@ -5806,40 +3199,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x902b861df1afad89d7b303c24276cad6909128155794c8f125087187838edea5",
@@ -5879,40 +3239,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x203a5e037da0b7c22636affe7360d88ea5c4a6716c16904295c86b013bd0f9cc",
@@ -5952,40 +3279,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xfc73aaee3eabe78d28613769f48a9a9de5766529f480def61eac9ce78043f845",
@@ -6025,40 +3319,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x96c7e2a86072d4e8aaa523502d92dd7b31e84ecfde1f5e84ad373e4520c16b0f",
@@ -6098,40 +3359,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xaf320ee7af48b9661c6191c36bebe76ad9c0ba92e6959504aad17b429cfb8478",
@@ -6171,40 +3399,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xf084caa2318e3b81a1772099d817e0eaac4fe5fe00bc1685be06bf31905b1780",
@@ -6244,40 +3439,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x3a3052878cdbf412b68279238fbec09b59cd9bf6a6081bdfe5f685a9bd7801c3",
@@ -6317,40 +3479,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xe0194969185362ec5257b2260eadc387ebbaaae207172c14144a87b233458f70",
@@ -6390,40 +3519,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x4722f597254f1a73154226901b135e4f817c28655ea7caf741ab8901cf9c0030",
@@ -6463,40 +3559,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb4b91ae7cd712d0fe6e327df855a8e11f8b0b2c3ae90e32616ac22e8cb0b6ad0",
@@ -6536,40 +3599,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xef14ace74311bdbecc0839ae9ba7f25b4d756136b9819fcc1010e7fdecee9824",
@@ -6609,40 +3639,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xde5d473d40fcc91f88126860d739d2d59abee5237001ef5a8d20ea9f23bdf80b",
@@ -6682,40 +3679,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x8e1f759ee6dfba96656c09a575b48062d5c090cf8947c036e5a8c60c76aa55a2",
@@ -6755,40 +3719,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xa59c0939828ed8bccdfbe1f0007d46a104966b4b95639f10904fd6e9bb047f2f",
@@ -6828,40 +3759,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6e9cb7a768f2644936ed6cbea9e13964377b6898c41b9cb25f774e44860060e9",
@@ -6901,40 +3799,7 @@ export const blks =[
           v: 1,
           creates: "0xDDB19f258574387d7c1265CD22E2447219307435",
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x816ee6102e945763cb74e41ba4b617d011f6c677c78b8a0a8aed1d58bc0d5cf1",
@@ -6974,40 +3839,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x9b84559dbf44bdefe9b1ccd47104731d268ccfc81ddbd25e3eded6ccacfc70c1",
@@ -7047,40 +3879,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xca2e4e916965f516baa43e8dcca58dacdc17c25bccaf14fec5ed1782c07df381",
@@ -7120,40 +3919,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xa4a9076bda5f9e6ca2e47ca21637deac3e39b8e20e5643c820f780bafd689d6f",
@@ -7193,40 +3959,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -7294,40 +4027,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xe1e342b7ab567e41bceea6dc5987c6ecddc17c37bab8bace062827de81cbf040",
@@ -7367,40 +4067,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xdcc9fe5a8c48c9e858ad5339ef1e9f649426a77d19122e0ee8a53d3484c932af",
@@ -7440,40 +4107,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xd16f8e34d40f1e71aac7a58d44f103989b3a4ac259dbeec990920396411ec69f",
@@ -7513,40 +4147,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xa285c37494b345dce94e3cba3eb2d2e4e7acaa8e9580dc80fe0ab90e747e9029",
@@ -7586,40 +4187,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x4bd78680c5b931179678302facffeef3c3cf59b4fd815d0c53025c74babb4224",
@@ -7659,40 +4227,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcf01d70aa96ac3656d2605b6bf5adb4488aee48043c3796dbe7014804823f6dd",
@@ -7732,40 +4267,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x3a6d8cff6bacd4e3affd2df16dc2f73116a72f122cf03f4325bf388caa9275cd",
@@ -7805,40 +4307,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x156bf2e4dc0baf44cb7acd33116e1fa08fa47d444d3cf1d4d5383e56d4cf5dd6",
@@ -7878,40 +4347,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb1cc638ef3db5310ed49b8e1a21927216fafc6458524402551bc8ebf62a31d5d",
@@ -7951,40 +4387,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x8e5c3a0d248b1fba73740d6fe320014c6f5e99d40f6c34737a5375146d0edb79",
@@ -8024,40 +4427,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xc4cd60f05bddcfacedf8ac5e44a7770be49294b8c122f8245084017d4e5857c7",
@@ -8097,40 +4467,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6484366f80e67c9274745bfec430aa1963a56b7d6f1854b679021d55b5f76370",
@@ -8170,40 +4507,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6ec13abede1538f7196471cbb61da746351020d4dbd65ee406df996cef098020",
@@ -8243,40 +4547,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcb27b9ba398dd5870d8a47c5d9dee7b0700ac68e02aa9d877c2887f62cd336fe",
@@ -8316,40 +4587,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x1f7dc6449f3838c23f61606f5b84d7952297cb46cfc149ecfd89ddd3bd749436",
@@ -8389,40 +4627,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcbb6c7d6403fb809dc74fb38efe41a1bd7cd94652e2c6231522d34bb37076a93",
@@ -8462,40 +4667,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x1fe76a32e8cfc7a2b27df05d442ad7bed0e0118d337ca5d7dba3421f3a24c17e",
@@ -8535,40 +4707,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6f80c9fe91a46e1f8f414e0469078ddb8608c41af96fa78429edb62acc9e0429",
@@ -8608,40 +4747,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -8700,40 +4806,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x80b325116eb64405cf9542ba140d04b39ab81dd4d587849f07ebb47d22747a60",
@@ -8773,40 +4846,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7244ca372272397391ab9185dfd2d912bb00cff1fea2c0c240ded6d4f2e7980e",
@@ -8846,40 +4886,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xfe223e8da8f2bc875bc73dceefe33e40b0856b84082bced31ecbb62b88f780fe",
@@ -8919,40 +4926,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x9e381467c60204f25d46f497e08fc7d1d1ad5d0a0a7df571466e987f304ed5a6",
@@ -8992,40 +4966,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x35b3807eed1582fa0a56513200565972687a709c292615dafbaf0d4ee945dbd1",
@@ -9065,40 +5006,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x57e0683e0f88374697af06708a4dd3de6fa978f59c6a4f9041fce4633441a535",
@@ -9138,40 +5046,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x4473796cccd17f31aa3460e6b587bb2960a01b2e009d05b1251ff8f8e4d39bd5",
@@ -9211,40 +5086,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xfc5bb30bdfc25f5851e674c13762f77390c2d2cfda889572d4b41c9aec2771b8",
@@ -9284,40 +5126,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x79927bb6116b5d357b9a188b9f223483338bbb95985158c1cf68106022fc8710",
@@ -9348,40 +5157,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6340ed23938b0e817a5a4ca20f4ef1896ba57af35d7814e57f548614bad09c05",
@@ -9421,40 +5197,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x10474ce239c658a98914803034fbd2ccfc6f1b9f6878c3643d8fba5024d43aea",
@@ -9494,40 +5237,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x0a242f7cc97c9303074b3f97601b33ad141741189e46099125c00e12261ed7b2",
@@ -9567,40 +5277,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -9668,40 +5345,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x91fb1360c713d6ca7a6f5def6d561e85e8303b6246d831e82359fdd5efce4490",
@@ -9741,40 +5385,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7df975ac5833b391a1cb9d07a379ef2debbcf7a29cc1b6726b10f9264946467b",
@@ -9814,40 +5425,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xa934f4cbd145cd6977bc90e70f00154c2c028071286de12e722c6dc679ec17c3",
@@ -9887,40 +5465,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xee5147d4964f82f3a0409fc30d2f76e84f4298e588437c5cdbff316ea77943b7",
@@ -9960,40 +5505,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7573f6a141d62b99d88ec746bc07f68067b7e761c71f8202334ab4f521adb1ce",
@@ -10033,40 +5545,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x26ed01aba9dd7803706dd13be157d16270befa30f9d1fca97477741467c56975",
@@ -10106,40 +5585,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcb6911fe8c09bab2f0aba829df585444739739638fc4b1bebf1e8f74f5bddc37",
@@ -10179,40 +5625,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x3bfd34d118341ff02677b9f4ee99fbdd7fb9434711eb8838cd5957a175b75c66",
@@ -10252,40 +5665,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xc09ea33a8b70b99cedf9aab3795ecb7fb59730497235dea565b0ca79e19328b0",
@@ -10325,40 +5705,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5b7abe121d7743d033d1227b7d89f73cef3e57d74ab02024e2ed3e15ad4889c6",
@@ -10398,40 +5745,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x086c17f931937e036fa9a160cb3f29913e34fc9c9ef3811593a708674150b032",
@@ -10471,40 +5785,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xda3726246f741e89b41ab66d74bf3a4d2a05d3d5c332e7cbfa0fe8609e1a826a",
@@ -10544,40 +5825,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6a4cb4272088ec2e9dc487d4c92265be3e94b640546d64aac41ea4faab1d3d52",
@@ -10617,40 +5865,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x239f38890dc231a793637109debe94eb0b969e382892791740437c3b0af18f79",
@@ -10690,40 +5905,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x73f9e13d778c8ff392cb9e57541242dbe28154fe1e57e23229c0dc7ef79f7116",
@@ -10763,40 +5945,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x90de7cb0831956c13fa63cd24c48f99c23fa381d456b3222f8b49523c037897f",
@@ -10836,40 +5985,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x4081c2777267e374f151386777b6a17c3832f9bb0c9cb63bc49066e94db1f901",
@@ -10909,40 +6025,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -11010,40 +6093,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x578766b8dfb53cbf2fa7eefad5a0de76a944440d606ba181c75669a7ecb5551f",
@@ -11083,40 +6133,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x8b7854e04f2ac0bbf902f01194af4bbd0cd9c99936d0b524af12ecbd8389baca",
@@ -11156,40 +6173,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x27f0ba0968c5c0cfa522b748aba83ed540a441669abda4b2db95b61050429950",
@@ -11229,40 +6213,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7652ddb6a05e6f5ae5c4fb250416b83038c164010ac3fad258177090ec89f26f",
@@ -11302,40 +6253,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x45f1b25b41384e7f953cf935a153d6eb578f1a3f48b534be38213df1b24eff91",
@@ -11375,40 +6293,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5d8d71877f5f331637fc58d5ad539ca93eade7f34f11928fa1e3ca17a4a67f2c",
@@ -11448,40 +6333,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x166e5df5f829b0b2b10418e06be50f97a5fd3f07c41d731a04ceffbe96d7478e",
@@ -11521,40 +6373,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xe908abe731ed35cfe23ae225c32031daf3c372e92b9f04814f926f7c6e6692f1",
@@ -11594,40 +6413,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xe4c1f69db41b7a9b6d541c9edfaa33f05d7e70d63566cc51f9e147b3737abd16",
@@ -11667,40 +6453,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x776b975e35f90b9b7bc507d9ea4b56c02ecb8fa1f97f1bf8ce792d9b15b246ad",
@@ -11740,40 +6493,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -11832,40 +6552,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb30c72120df86eeb8399fe791ac0fd68ffd7d9329dabf01810f7483861fc6c65",
@@ -11905,40 +6592,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6c9e0800bab1a3c2e5e0fc17118eb1f5cb00752bc746f2e1cd02244218f42cc3",
@@ -11978,40 +6632,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xd1a71ccd55c434fb0fd12e3f6b76a287703e459f2f9dc760c2a923c62565139e",
@@ -12051,40 +6672,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x2868ca38fbc8a1e172c5515edab5efaf57a6b5aa5d6fa221b2c818df47474a68",
@@ -12124,40 +6712,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x984ef8e7cd34500853767448176ce8ed4f89507c760e24119ba18e82b5003564",
@@ -12197,40 +6752,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6f795c1747e0d6c5426b54d1028c536e3bc81e77dfa0449bc76147dfdd905a31",
@@ -12261,40 +6783,7 @@ export const blks =[
           v: 160038,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x37d470c2f0b2f515c3c534cbf73aff0a88fbfd7fec8b8cad16e2beb66f8db44a",
@@ -12334,40 +6823,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x476b88382e7b5223f313d597ae8062cd0f12133f40790d4b8c16f2b5991f7831",
@@ -12407,40 +6863,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7cfbcc1238ff44be4e769e83619ccaab46aaefd682a7db7b36a95aa64ed102db",
@@ -12480,40 +6903,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5bfd4944e99e971ee5314ead0b4d70bb784dff02fed85098833b0bd268dee197",
@@ -12553,40 +6943,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xf98b93efc0bee0ac9b72eb61a850dff501471ca704408bc0a222489d5ff6bba0",
@@ -12626,40 +6983,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7532a7f14d5df52c0de438750b518f6e33012bef651abf169801fea781a6514a",
@@ -12699,40 +7023,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xb7a1490bca372af886d6fc53cf7c9eb3f1f0d95cdc3a815a594abb0f32dd94f9",
@@ -12772,40 +7063,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcaaeb9456a9925f71485a05dcf6e9274b821067f2a6b2b916636b924a3b5319b",
@@ -12836,40 +7094,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xc3c97d9544c347840c396e8c423a45eff4fa75a94f3d8ba6d11a705b3bcac3d0",
@@ -12900,40 +7125,7 @@ export const blks =[
           v: 160038,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x2ea09c17119d9d8ffa03092d0f51559c5c1ff1623dfb59f5d4bc03555c0a457a",
@@ -12973,40 +7165,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x5f44086a8bd41dad3d80f098fc04652a80b94f2ece2bf4ca1f94e3d75be1a16d",
@@ -13037,40 +7196,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xeb296339493815bfcd38f25154c4fc1f88ec7556fd1c5f55d5ec9a6ba6357f7f",
@@ -13110,40 +7236,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xa335fe6c4b47eb61b65fcc4929600019f611c354e29cb823577c0193265c3397",
@@ -13183,40 +7276,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -13284,40 +7344,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x65338b428595db27e15bba6b9137b8ac4b6feef02cb9519b9969b68472af1303",
@@ -13357,40 +7384,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xda73daa6114c2cc72129eb80c776fc908ecc7e82ca2bef28a6de472568316a9e",
@@ -13430,40 +7424,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x297f1a820592310e723441bfa6b99055533e430aee5965cbc4eae0560e5c586e",
@@ -13503,40 +7464,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcb943bca3286b50d46da61dfbb00b899937d84f44d38a5a8fdfd1baacc815ff6",
@@ -13576,40 +7504,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xa35015f9a44d1f10515f673bbf79b2686c912640163588045099b92dc9eb28cd",
@@ -13649,40 +7544,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x4ea2c7ecc7c168e4f29eabf8cc8b68ff86a65456072ad3fbf8cb059e7a771977",
@@ -13722,40 +7584,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x593a03ca117c6e0791fd7ecedaab1fbee293f31b6386fc2e5ba6f5e4568bb7cb",
@@ -13795,40 +7624,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xa15f42d1d0b26724cd3bc6e316f063f3df3bf8d4ef5ce29da7a48453516a75bb",
@@ -13868,40 +7664,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7bd530c8b927ba16bc69f785dbb245d57d3ffa824e80edcd298fda8599fef2d1",
@@ -13941,40 +7704,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x49eed63ad24701589dd6fa18512f18c6c0397d63d83f29568922534636b1bd3e",
@@ -14014,40 +7744,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xf67466f51de0d5f4e95cd59aa30b11debe2a30eabe673ab627d404260c06788f",
@@ -14087,40 +7784,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xd1ec3218b5bedba97b0edd20028b88ede11cdf64af4b6ce003d91c0b837c0e17",
@@ -14160,40 +7824,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x855e291f4d27b9637099a57e5b6c84c20f531c672e12b8e10a6572c42ddf4493",
@@ -14233,40 +7864,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x71222fa7efc8a6be2ec552679597bcbf99e470a757056ac641958d64c623ee6a",
@@ -14297,40 +7895,7 @@ export const blks =[
           v: 160038,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xcc808fb3841f0afa18c94f5627958167bc02c98c4dcdf5968e5dbe72befd23e3",
@@ -14361,40 +7926,7 @@ export const blks =[
           v: 160038,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
@@ -14462,40 +7994,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6be01a9740009070d62d2e1f11bfb0465fe9a47513a908c702ef2c9e68aa1c48",
@@ -14526,40 +8025,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xee5eecb9d0b12d115d073f151caa35ad047a981bb082fb184e9d4bdbe5c29343",
@@ -14599,40 +8065,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x19112aa6b39cd5b0132a9dad8f8d0dda03a86fef8c53536f59a70954e290009a",
@@ -14672,40 +8105,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xd1a2e18554f79f263ffc6094db3c102b17d94ad8879c28a728313ea1c6cfa59d",
@@ -14745,40 +8145,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xd7a5d3bf1466189edeb776d9752d0cce32055f7b7ccdb6cd97943b95489300a5",
@@ -14809,40 +8176,7 @@ export const blks =[
           v: 160038,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x35ea13bc9354e00162378c354c46cfd8d1d4abdc7eb4312c7ae0cf498a011d8a",
@@ -14882,40 +8216,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x61b68dbe69d61daeb3c3a63c04cffc8b6e64afcc99c61da348b13c5ba3a0d8c4",
@@ -14955,40 +8256,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x3d9501b6e620cf642add634df1a5fefd2c2939859b6179b32836e57573f89277",
@@ -15028,40 +8296,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6b0b53be34377c572eeaf9a4d5ab1b19665374d9b197b18b8bf53795b2fb4f10",
@@ -15101,40 +8336,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x83ef53694702123f7d9780530a8138008d5058ebc83a74474946c2d19d17ae91",
@@ -15174,40 +8376,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xefabb0f250e41f46de8cf6c88e18817f834a47e437a740e7722fba5f14567112",
@@ -15247,40 +8416,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xe8f84d9d22073bbb4dc4a47d269246dc8b708ef1d123234b438a8d6112e4e70e",
@@ -15320,40 +8456,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xccaff6edf9e7235cca40149f504cc7b910a13b6330765ad978d1f45f3385bc56",
@@ -15393,40 +8496,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x2febffcc325b39a75f343c9e6047cb8e27df27e778237a334f742f0b32f2a94f",
@@ -15466,40 +8536,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x7792192e297732fe79cac20bb0a22d2e7b6959ed8dd64ea0ee3b15cd8044b658",
@@ -15539,40 +8576,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xfeae5ea911a47a12d5e7b3209b40c31153d5effc243cf8c1fed0334fb5413acc",
@@ -15612,40 +8616,7 @@ export const blks =[
           v: 0,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0xf67138ae718f7505117e82772fcbe986b6a5d7a4ac0117d75c50548b18edeaf4",
@@ -15676,40 +8647,7 @@ export const blks =[
           v: 160037,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
         {
           hash: "0x6d613c78e0f1ae315b279c1c3553d356826b6b73929fd32c1223d398603b5570",
@@ -15749,40 +8687,7 @@ export const blks =[
           v: 1,
           creates: null,
           chainId: 80001,
-          wait: (confirms, timeout) => __awaiter(this, void 0, void 0, function* () {
-            if (confirms == null) {
-              confirms = 1;
-            }
-            if (timeout == null) {
-              timeout = 0;
-            }
-            // Get the details to detect replacement
-            let replacement = undefined;
-            if (confirms !== 0 && startBlock != null) {
-              replacement = {
-                data: tx.data,
-                from: tx.from,
-                nonce: tx.nonce,
-                to: tx.to,
-                value: tx.value,
-                startBlock
-              };
-            }
-            const receipt = yield this._waitForTransaction(tx.hash, confirms, timeout, replacement);
-            if (receipt == null && confirms === 0) {
-              return null;
-            }
-            // No longer pending, allow the polling loop to garbage collect this
-            this._emitted["t:" + tx.hash] = receipt.blockNumber;
-            if (receipt.status === 0) {
-              logger.throwError("transaction failed", _ethersproject_logger__WEBPACK_IMPORTED_MODULE_1__.Logger.errors.CALL_EXCEPTION, {
-                transactionHash: tx.hash,
-                transaction: tx,
-                receipt: receipt
-              });
-            }
-            return receipt;
-          }),
+          
         },
       ],
       baseFeePerGas: {
