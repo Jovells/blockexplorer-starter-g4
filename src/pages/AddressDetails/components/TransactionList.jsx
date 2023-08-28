@@ -9,6 +9,7 @@ import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 import { getAllTxns } from '../../../utils/alchemy';
 
+
 const columns = [
   { id: 'hash', label: 'Txn Hash', minWidth: 170 },
   { id: 'asset', label: 'Asset', minWidth: 40 },
