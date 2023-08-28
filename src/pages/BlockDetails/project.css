@@ -1,0 +1,24 @@
+table{
+    border: solid 2px black; 
+}
+.tab{
+    border: solid 1px rgb(185, 185, 185);
+    box-sizing: 2px;
+    padding: 1px;
+
+}
+img{
+    position: absolute;
+    margin: 10px;
+}
+.be{
+    padding-left: 30px;
+    margin: 10px;
+}
+.come{
+    
+    padding-left: 500px;
+    position: relative;
+    top: -30px;
+    border: none;
+}
