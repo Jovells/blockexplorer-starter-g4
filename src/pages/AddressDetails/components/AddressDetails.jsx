@@ -1,36 +1,34 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
-//import { useParams } from 'react-router-dom'
-import Paper from '@mui/material/Paper';
+import { useParams } from 'react-router-dom'
 import Grid from '@mui/material/Grid';
 import TxnTab from './Tab'
-import { CardItem } from './Card';
-
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
+import { MoreInfoCard, OverviewCard } from './Card';
+import { getBalance } from '../../../utils/alchemy';
+import { useState } from 'react';
 
 
-
-export default function AddressDetails({ address }) {
-    //const { id } = useParams();
+export default function AddressDetails() {
+    const [initBal, setInitBal] = useState(0);
+    const { id } = useParams();
+    function financial(x) {
+        return Number.parseFloat(x).toFixed(10);
+    }
+    getBalance(id).then((bal) => setInitBal(financial(Number(bal) / 1000000000000000000)))
     //const address = addresses.find((address) => address.name === id)
     return (
         <Grid container spacing={1}>
-            Address: {address || ''}
-
-            <Grid item xs={5}>
-                <CardItem />
+            <Grid item xs={12}>
+                Address: {id || ''}
             </Grid>
-            <Grid item xs={5}>
-                <CardItem />
+
+            <Grid item xs={6}>
+                <OverviewCard balance={initBal} />
+            </Grid>
+            <Grid item xs={6}>
+                <MoreInfoCard />
             </Grid>
             <Grid item xs={12}>
-                <TxnTab />
+                <TxnTab address={id} />
             </Grid>
 
         </Grid>
