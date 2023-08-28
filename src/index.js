@@ -23,7 +23,7 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
         loader: homeLoader,
-
+    
       },
       {
         path: "block/:blocknumber",
