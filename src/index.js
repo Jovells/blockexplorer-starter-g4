@@ -16,21 +16,21 @@ import Root from './pages/Root/Root';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
+    element: <Root />,
 
     children: [
       {
         index: true,
         element: <Home />,
-        // loader: homeLoader,
-        
+        loader: homeLoader,
+    
       },
       {
         path: "block/:blocknumber",
         element: <BlockDetails />
       },
       {
-        path: "address/:address",
+        path: "address/:id",
         element: <AddressDetails />
       },
       {

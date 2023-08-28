@@ -39,7 +39,7 @@ function a11yProps(index) {
     };
 }
 
-export default function TxnTab() {
+export default function TxnTab({ address }) {
     const [value, setValue] = React.useState(0);
 
     const handleChange = (event, newValue) => {
@@ -59,7 +59,7 @@ export default function TxnTab() {
                 </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
-                <TransactionList />
+                <TransactionList address={address} />
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
                 Internal Txns
