@@ -8,7 +8,7 @@ import {
   RouterProvider,
   Outlet,
 } from "react-router-dom";
-import Home from './pages/Home/components/Home';
+import Home, { loader as homeLoader } from './pages/Home/components/Home';
 import BlockDetails from './pages/BlockDetails/BlockDetails';
 import AddressDetails from './pages/AddressDetails/components/AddressDetails';
 import Root from './pages/Root/Root';
@@ -21,14 +21,20 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />
+        element: <Home />,
+        loader: homeLoader,
+        
       },
       {
-        path: "block",
+        path: "block/:blocknumber",
         element: <BlockDetails />
       },
       {
-        path: "address",
+        path: "address/:address",
+        element: <AddressDetails />
+      },
+      {
+        path: "transaction/:address",
         element: <AddressDetails />
       },
     ]
